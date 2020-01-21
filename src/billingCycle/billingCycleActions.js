@@ -2,7 +2,7 @@ import axios from 'axios';
 import { toastr } from 'react-redux-toastr';
 import { reset as resetForm } from 'redux-form';
 import { showTabs, selectTab } from '../common/tab/tabActions';
-const BASE_URL = 'http://localhost:4001';
+const BASE_URL = 'https://wardenback.herokuapp.com';
 
 export function getList() {
   return new Promise((resolve, reject) => {

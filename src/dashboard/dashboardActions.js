@@ -1,5 +1,5 @@
 import axios from 'axios';
-const BASE_URL = 'http://localhost:4001';
+const BASE_URL = 'https://wardenback.herokuapp.com';
 
 export function getSummary() {
   return new Promise((resolve, reject) => {
