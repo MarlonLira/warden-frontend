@@ -4,9 +4,8 @@
   "description": "**Empresa:** #\\\r **Nome do app:** Warden\\\r **Site:** warden.com\\\r **Tecnologias de desenvolvimento:** Flutter | React Js | Node js | [Typescript](https://alligator.io/react/typescript-with-react/) [Mais](https://www.youtube.com/watch?v=OXxul6AvXNs) [Git](https://github.com/Rocketseat/youtube-typescript-reactjs)",
   "main": "index.js",
   "scripts": {
-    "start": "npm run production",
     "dev": "webpack-dev-server --progress --colors --inline --hot",
-    "production": "webpack --progress -p"
+    "production": "NODE_ENV=production webpack --progress -p"
   },
   "repository": {
     "type": "git",
@@ -47,5 +46,8 @@
     "style-loader": "0.13.1",
     "webpack": "1.14.0",
     "webpack-dev-server": "1.16.2"
+  },
+  "dependencies": {
+    "http-server": "0.10.0"
   }
 }
